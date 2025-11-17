@@ -1,3 +1,5 @@
 *.ipynb_checkpoints
 *anaconda_projects
 .venv
+clean_data.csv
+data.csv
