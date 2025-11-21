@@ -2,11 +2,8 @@
 *anaconda_projects
 .venv
 clean_data.csv
-<<<<<<< HEAD
 data.csv
 Ad_dataset.geojson
 Dataset.csv
 Ad_Dataset2.csv
-=======
-data.csv
->>>>>>> c726f75d350dc78b161966eb4f325d7e15249800
+Ad_Dataset3.xlsx
