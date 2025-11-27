@@ -1,11 +1,11 @@
 # The Invisible Epidemic: How Catalunya's Prescription Patterns Reveal a Mental Health Transformation
 
-> **A Data Story from the Prescriptions of 7.8 Million Catalans**  
+> **Let's dive into 1.4 Billion Catalan Prescriptions**
 > *Analyses & Visualization of Big Data — University of Barcelona*
 
 ## Prologue: The Hidden Signal
 
-In the quiet corridors of CatSalut's prescription databases, a silent transformation is unfolding. Between 2016 and 2025, over 200 million prescriptions were filled across Catalunya—each one a tiny signal of human need, each one aggregated into patterns that tell a story far larger than any individual case.
+Between 2016 and 2025, over 1.4 billion prescriptions were filled across Catalunya—each one a tiny signal of human need, each one aggregated into patterns that tell a story far larger than any individual case.
 
 But one pattern stands out above all others: **the relentless rise of medications for the nervous system**. What begins as painkillers in childhood morphs into antidepressants in young adulthood, anxiolytics in midlife, and a complex cocktail of neurological treatments in old age. This is not just data—it's a mirror reflecting how modern life, aging, and crisis reshape our collective mental health.
 
@@ -302,7 +302,7 @@ This data raises ethical questions:
 
 ## Conclusion: The Prescription as a Signal
 
-Every prescription in this dataset represents a moment of need—a person seeking help, a doctor making a decision, a system responding to demand. When aggregated across 7.8 million people over a decade, these moments form patterns that reveal something profound about how we live, age, and cope.
+Every prescription in this dataset represents a moment of need—a person seeking help, a doctor making a decision, a system responding to demand. These moments form patterns that reveal something profound about how we live, age, and cope.
 
 The data tells us that **mental health medications are not a marginal concern**—they are central to how modern societies manage health across the lifespan. From the painkillers of childhood to the complex polypharmacy of old age, from the gender divides to the regional variations, from the steady growth to the COVID-19 acceleration—the data reveals a transformation that is both medical and social.
 
