@@ -160,19 +160,19 @@ Main findings:
 
 ### ADHD (stimulants)  
 
-- Strong **male dominance** at ages 6–15.
+- Strong **male dominance** at ages 6–18 (as expected).
 
 ### Antidepressants  
 
-- Strong **female dominance** at ages 18–65.
+- Strong **female dominance** at ages 14–60.
 
-### Analgesics  
+### Analgetics and Antipiretics  
 
 - Female-dominated across adolescence and adulthood.
 
 ### Antiparkinsonians  
 
-- Male-dominated in older ages.
+- Male-dominated in older ages (as expected).
 
 **Conclusion:**  
 Gender patterns follow known epidemiological trends.  
