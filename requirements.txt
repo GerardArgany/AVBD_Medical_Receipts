@@ -4,3 +4,4 @@ matplotlib==3.10.7
 ipykernel==7.1.0
 seaborn==0.13.2
 geopandas=1.1.1
+jupyter>=1.0.0
