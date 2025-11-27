@@ -1,6 +1,7 @@
 # The Invisible Epidemic: How Catalunya's Prescription Patterns Reveal a Mental Health Transformation
 
 > **Let's dive into 1.4 Billion Catalan Prescriptions**
+> 
 > *Analyses & Visualization of Big Data — University of Barcelona*
 
 ## Prologue: The Hidden Signal
