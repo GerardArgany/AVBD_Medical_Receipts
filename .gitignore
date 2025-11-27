@@ -1,9 +1,24 @@
 *.ipynb_checkpoints
 *anaconda_projects
 .venv
+<<<<<<< HEAD
 clean_data.csv
 data.csv
 Ad_dataset.geojson
 Dataset.csv
 Ad_Dataset2.csv
 Ad_Dataset3.xlsx
+=======
+
+clean_data.csv
+data.csv
+*data_nervioso.csv
+*data_clean.csv
+*data_original.csv
+Ad_dataset.geojson
+Dataset.csv
+Ad_Dataset2.csv
+Ad_Dataset3.xlsx
+
+*DS_Store
+>>>>>>> 45a2e6997dd66ac68372c4de8862329868b96432
