@@ -1,5 +1,11 @@
 # Catalunya Prescription Patterns — Vanja's Conclusions
 
+## 0. Notebooks
+
+All analyses and plots are generated in notebooks:
+- [`nervioso_analyses.ipynb`](./analysis/nervioso_analyses.ipynb)
+- [`initial_prescriptions_analyses.ipynb`](./analysis/initial_prescriptions_analyses.ipynb)
+
 ## 1. Introduction
 
 This data story analyzes **prescription patterns in Catalonia** using the official ATC (Anatomical Therapeutic Chemical) classification system.  
