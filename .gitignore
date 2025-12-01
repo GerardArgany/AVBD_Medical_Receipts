@@ -1,10 +1,24 @@
 *.ipynb_checkpoints
 *anaconda_projects
 .venv
+<<<<<<< HEAD
 clean_data.csv
 data.csv
+=======
+
+clean_data.csv
+data.csv
+*data_nervioso.csv
+*data_clean.csv
+*data_original.csv
+>>>>>>> 1820c51250fcae9676b4001eba801d121730cb22
 Ad_dataset.geojson
 Dataset.csv
 Ad_Dataset2.csv
 Ad_Dataset3.xlsx
+<<<<<<< HEAD
 Pill_(NIH_BioArt_407_-_633323).png
+=======
+
+*DS_Store
+>>>>>>> 1820c51250fcae9676b4001eba801d121730cb22
