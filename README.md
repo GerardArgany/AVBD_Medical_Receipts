@@ -2,6 +2,12 @@
 
 > Analyses & Visualization of Big Data — University of Barcelona
 
+Agostina Iozzi - AgostinaIozzi
+Gerard Argany - GerardArgany
+Isaac Martínez - IsaacMaEs
+Sergi Gallego - srurug9818
+Vanja Marković - markovicvanja
+
 This repository contains the full analytical pipeline and visual outputs for a data-driven investigation of prescription behaviour in Catalunya.
 Using one of Europe’s most detailed public pharmacy-billing datasets, we explore how drug consumption varies by age, sex, time, therapeutic class (ATC), and geographical structure, with a particular emphasis on the Nervous System (ATC N) and mental-health–related medications.
 
