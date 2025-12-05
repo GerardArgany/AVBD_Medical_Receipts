@@ -88,6 +88,7 @@ Key datasets include:
 - [Municipal population registers](https://www.idescat.cat/pub/?id=pmh&n=13312&lang=en)  
 - [Socioeconomic territorial index](https://www.idescat.cat/pub/?id=ist&n=14034&hist=taules%2Fv2%2Fist%2F14034%2F14994%2Fcom%2Fdata%5Etab%3Dd%2Fr%3D1%2C0%2Ft%3D-1c%3B-0d%2C0)
 - [COVID-19 incidence data](https://analisi.transparenciacatalunya.cat/Salut/Registre-de-casos-de-COVID-19-a-Catalunya-per-muni/jj6z-iyrp/about_data)
+- [Population per comarca] (https://www.idescat.cat/indicadors/?id=aec&n=15902)
 
 ### Data Types
 
