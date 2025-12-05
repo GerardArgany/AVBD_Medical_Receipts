@@ -185,6 +185,10 @@ Our story examines:
 
 These mirror known epidemiological patterns, but the age resolution reveals life-course timing very clearly.
 
+### 6. Economic Impact: 
+
+- Analyzes total costs, government subsidies, and patient co-payments for mental health medications
+
 ## Conclusions & Policy Implications
 
 Prescription data reveal structural mental-health inequalities across age, sex, and territory.
