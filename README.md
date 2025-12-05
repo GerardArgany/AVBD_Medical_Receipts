@@ -1,11 +1,13 @@
-# Catalunya Prescriptions Data Story
+# The Invisible Epidemic: How Catalunya’s Prescription Data Reveals a Mental Health Transformation
 
 > Analyses & Visualization of Big Data — University of Barcelona
 
-This project develops a comprehensive, data-driven narrative about prescription behaviors in Catalunya using anonymized public reimbursement data from CatSalut.
-Our analysis investigates how drug consumption patterns vary across age, time, therapeutic class (ATC hierarchy), geography, and population characteristics, with a particular emphasis on nervous-system (ATC N) and mental-health–related prescriptions.
+This repository contains the full analytical pipeline and visual outputs for a data-driven investigation of prescription behaviour in Catalunya.
+Using one of Europe’s most detailed public pharmacy-billing datasets, we explore how drug consumption varies by age, sex, time, therapeutic class (ATC), and geographical structure, with a particular emphasis on the Nervous System (ATC N) and mental-health–related medications.
 
-The goal is not only statistical exploration but storytelling: identifying transitions in life stages, signals of chronicity, demographic inequalities, and temporal anomalies (COVID, seasonal patterns, regional disparities).
+Our goal is not only statistical description but narrative insight: identifying life-course transitions, demographic inequalities, temporal shocks (e.g., COVID-19), and regional disparities.
+
+Our presentation is available [here](https://docs.google.com/presentation/d/10Zp_cbN-qxVcuO1jbMmhXrfdSdAfpXPb/edit?usp=sharing&ouid=107530158480054310317&rtpof=true&sd=true).
 
 ## Repository Overview
 
@@ -21,6 +23,8 @@ The goal is not only statistical exploration but storytelling: identifying trans
 └── README.md
 
 ```
+
+Raw data (>100MB) are not stored in the repo; they live in a [protected shared drive](https://drive.google.com/drive/folders/1oSEh35RooyFF02pfLBpgv01nmVz6dK72?usp=sharing).
 
 ## Introduction
 
@@ -74,28 +78,30 @@ We use public, aggregated, anonymized datasets released by:
 Key datasets include:
 
 - [Receptes facturades al Servei Català de la Salut]((https://datos.gob.es/es/catalogo/a09002970-recetas-facturadas-al-servei-catala-de-la-salut)) (prescriptions, 2016–2025)  
-- Sanitary regions and territorial divisions  
-- Municipal population registers  
-- Socioeconomic territorial index  
-- COVID-19 incidence data
+- [Sanitary regions](https://analisi.transparenciacatalunya.cat/Salut/Regions-sanit-ries/q2jd-tqye/about_data) and [territorial divisions](https://www.icgc.cat/ca/Geoinformacio-i-mapes/Dades-i-productes/Geoinformacio-cartografica/Divisions-administratives)  
+- [Municipal population registers](https://www.idescat.cat/pub/?id=pmh&n=13312&lang=en)  
+- [Socioeconomic territorial index](https://www.idescat.cat/pub/?id=ist&n=14034&hist=taules%2Fv2%2Fist%2F14034%2F14994%2Fcom%2Fdata%5Etab%3Dd%2Fr%3D1%2C0%2Ft%3D-1c%3B-0d%2C0)
+- [COVID-19 incidence data](https://analisi.transparenciacatalunya.cat/Salut/Registre-de-casos-de-COVID-19-a-Catalunya-per-muni/jj6z-iyrp/about_data)
 
 ### Data Types
 
 - Aggregated counts (no personal data)  
-- Categorical dimensions: ATC codes, age groups, sex, sanitary region  
+- Categorical dimensions: ATC codes, age groups, sex, sanitary region (code)  
 - Temporal dimensions (provided as ints): year, month
-- Numerical measures: number of prescriptions/envases, total cost, public co-pay amount
+- Numerical measures: number of prescriptions, total cost, public co-pay amount
+- Coordinates in GeoJSON Polygon format
 
 ### Storage & Versioning
 
 - Large raw extracts stored on [restricted-access shared drive](https://drive.google.com/drive/folders/1oSEh35RooyFF02pfLBpgv01nmVz6dK72?usp=sharing)
 - Processed datasets under 100MB stored in `data/`  
 - All transformations documented in Jupyter notebooks  
-- Scripts tracked via Git for full reproducibility
+- Git versioning for full reproducibility
 
 ### Privacy & Ethics
 
-- No personal data processed  
+- No personal data processed
+- Data is aggregated at population level and anonymized
 - Fully GDPR compliant  
 - All datasets licensed for reuse with attribution  
 
@@ -120,7 +126,7 @@ pip install -r requirements.txt
 Place raw extracts inside a local `data_raw/` (make sure to ignore it by Git).
 Use `data/` only for small, processed, anonymized CSVs.
 
-ull the latest raw extracts from the protected drive and place them in a local `data_raw/` folder (ignored by Git). Update notebook paths accordingly.
+Pull the latest raw extracts from the protected drive and place them in a local `data_raw/` folder (ignored by Git). Update notebook paths accordingly.
 
 ### Notebooks
 
@@ -136,29 +142,65 @@ Our story examines:
 
 ### 1. How drug consumption evolves across age
 
-- childhood = anti-infectives & respiratory
-- adulthood = chronic metabolic & cardiovascular
-- 45–70 = nervous-system dominance emerges
-- 75+ = strong multi-morbidity
+- Childhood → dominated by anti-infectives and respiratory drugs
+- Early adulthood → chronic/lifestyle conditions begin (digestive, hormonal, musculoskeletal)
+- Midlife (45–75) → strong rise in nervous-system and cardiovascular medication
+- Older adults (75+) → extensive polypharmacy, with cardiovascular + metabolic dominating
 
 ### 2. Regional differences
 
 - Per-capita normalization reveals urban–rural contrasts
-- Detection of outlier regions (e.g., Terres de l’Ebre anomalies)
+- Region × Population structure interactions
 
 ### 3. Temporal signals
 
-- COVID-19 shifts
-- Seasonality across therapeutic classes
-- Long-term secular trends (2016–2025)
+- Sharp increases in mental-health medication after 2020, especially in young adults
+- Broad secular growth across most categories
+- Regional differences amplify after COVID
 
 ### 4. Nervous System (ATC N) deep-dive
 
-- Level-3 and Level-4 breakdowns
+- Level-2 and Level-3 breakdowns
 - Age signatures of anxiety, depression, chronic pain treatments
 - Evolution before/after COVID-19
 
-### 5. Demographic inequalities
+### 5. Sex differences in Mental Health
 
-- Age × Sex patterns
-- Region × Population structure interactions
+- Male excess in
+  - ADHD medications (6–19y)
+→ likely due to diagnostic bias: boys are diagnosed earlier, girls remain underdiagnosed
+  - Antipsychotics in adolescence
+
+- Female excess in
+  - Antidepressants (18–65+)
+  - Anxiolytics / Sedatives (30–75)
+
+These mirror known epidemiological patterns, but the age resolution reveals life-course timing very clearly.
+
+## Conclusions & Policy Implications
+
+Prescription data reveal structural mental-health inequalities across age, sex, and territory.
+
+Rising mental-health medication use among young adults after COVID-19 is a strong public health signal.
+
+Female–male asymmetries suggest potential underdiagnosis in girls (ADHD) and over-reliance on anxiolytics among women.
+
+The explosion of polypharmacy in older adults emphasizes the need for integrated care and deprescribing programs.
+
+Territorial disparities may motivate region-specific health interventions.
+
+### Future Work
+
+Would benefit from:
+
+- Per-capita rates by municipality
+- Linkage to socioeconomic indicators
+- Longitudinal regional cohort decomposition
+- Machine-learning clustering of drug profiles
+- Time-series forecasting of mental-health burden
+- More granular data (daily timestamps, diagnostic codes, prescriber type) would enable stronger causal inference, though such data may not be publicly available.
+
+### License
+
+Creative Commons Attribution (CC BY 4.0) for all derived datasets, plots, and documentation.
+Original data remain under their respective public open-data licenses.
